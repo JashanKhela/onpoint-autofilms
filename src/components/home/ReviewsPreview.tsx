@@ -1,5 +1,12 @@
 import Image from "next/image";
 import { Star } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"; // adjust path if needed
 
 const reviews = [
   {
@@ -7,21 +14,42 @@ const reviews = [
     avatar:
       "https://lh3.googleusercontent.com/a/ACg8ocIt24x_10kiL1er1KcJ0VAZ_Sm5wdaq6vK7obFRDI68OiqM=s120-c-rp-mo-br100",
     date: "2 months ago",
-    text: "Thank you to Mathew and Derek for a super awesome amazing job. Both of them are incredibly amazing to work with!",
+    text: "Thank you to Mathew and Derek for a super awesome amazing job, both of them are incredibly amazing to deal with and are super passionate and professional and super excellent service especially with dropping me off and picking me up.",
   },
   {
-    name: "Troy Camp",
+    name: "Sky Nahwegezhic",
     avatar:
-      "https://lh3.googleusercontent.com/a-/ALV-UjXsnoJ2W1KKty5Krt94ZHcUlYVa_f4PuR_yHkKRbL2KHFRKhNjz=s120-c-rp-mo-br100",
-    date: "1 month ago",
-    text: "Absolutely fantastic experience! Had the windows tinted on my 2024 WRX and I knew I was in the right place.",
+      "https://lh3.googleusercontent.com/a/ACg8ocLUxJJPESBLQ-FFSeWUGTHtUnIpDVQOqgz2na4oxgCs7X3B5A=s120-c-rp-mo-br100",
+    date: "5 months ago",
+    text: "Matt and Derek were awesome to deal with and provided excellent service. I loved that they dropped me off at the mall while I waited so I could do some shopping to kill some time.",
+  },
+  {
+    name: "Murray Ashworth",
+    avatar:
+      "https://lh3.googleusercontent.com/a-/ALV-UjUiGiSKGRq4Bat876yPW4cuFtpsQIN0rLVnhg_7KjOsKIBwyQg=s120-c-rp-mo-br100",
+    date: "10 months ago",
+    text: "Amazing job on our motorhome. They did a full cut polish and custom Suntech clear wrap. Great craftsmanship.",
+  },
+  {
+    name: "Bryan Patton",
+    avatar:
+      "https://lh3.googleusercontent.com/a/ACg8ocLwChhixm7YcGiVU6W4l_rKPEI_gLbtx5iUPNkwECfygPTMvDg=s120-c-rp-mo-br100",
+    date: "7 months ago",
+    text: "These guys are incredible. I got PPF and tint on my new Tacoma. Professional and respectful of my budget. Highly recommend!",
+  },
+  {
+    name: "Shaun Powers",
+    avatar:
+      "https://lh3.googleusercontent.com/a-/ALV-UjVEU5Mzt3xhiuEnHqN1UfZOlPc20flAIsfpRiofGigJ1NxM1OHhOg=s120-c-rp-mo-ba2-br100",
+    date: "2 months ago",
+    text: "Matt and crew rescued me when I got over my head with a DIY bike film protection kit. They wrapped my bike and saved it!",
   },
   {
     name: "Kelly Ryan",
     avatar:
       "https://lh3.googleusercontent.com/a-/ALV-UjXlrog1Eb57wdNsiYzBMbsCuKwTOhWUw47shcPWqiThdj27-Fz-=s120-c-rp-mo-ba3-br100",
     date: "8 months ago",
-    text: "I cannot thank On Point Films enough for their work on repairing the vinyl on my new car. The original installer messed it up and they made it flawless.",
+    text: "On Point Films repaired the vinyl on my new car after a bad install. Derrek and Matt are masters of their craft.",
   },
 ];
 
@@ -56,45 +84,55 @@ export function ReviewsPreview() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviews.map((review, i) => (
-            <div
-              key={i}
-              className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg shadow-md hover:border-neon-pink transition-all"
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src={review.avatar}
-                  alt={review.name}
-                  width={48}
-                  height={48}
-                  className="rounded-full border border-neon-purple"
-                />
-                <div>
-                  <h3 className="text-neon-pink font-semibold">
-                    {review.name}
-                  </h3>
-                  <p className="text-sm text-zinc-400">{review.date}</p>
+        <Carousel className="w-full max-w-4xl mx-auto">
+          <CarouselContent>
+            {reviews.map((review, i) => (
+              <CarouselItem
+                key={i}
+                className="md:basis-1/2 lg:basis-1/3 px-2 py-4"
+              >
+                <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg shadow-md hover:border-neon-pink transition-all h-full flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center gap-4 mb-4">
+                      <Image
+                        src={review.avatar}
+                        alt={review.name}
+                        width={48}
+                        height={48}
+                        className="rounded-full border border-neon-purple"
+                      />
+                      <div>
+                        <h3 className="text-neon-pink font-semibold">
+                          {review.name}
+                        </h3>
+                        <p className="text-sm text-zinc-400">{review.date}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-1 mb-3 text-neon-pink">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          size={16}
+                          fill="#FB06FC"
+                          className="text-neon-pink"
+                        />
+                      ))}
+                    </div>
+
+                    <p className="text-zinc-300 text-sm leading-relaxed">
+                      {review.text}
+                    </p>
+                  </div>
                 </div>
-              </div>
-
-              <div className="flex gap-1 mb-3 text-neon-pink">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    size={16}
-                    fill="#FB06FC"
-                    className="text-neon-pink"
-                  />
-                ))}
-              </div>
-
-              <p className="text-zinc-300 text-sm leading-relaxed">
-                {review.text}
-              </p>
-            </div>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-center gap-4 mt-6">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </Carousel>
 
         <div className="text-center mt-12">
           <a

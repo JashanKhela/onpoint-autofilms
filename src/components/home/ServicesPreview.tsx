@@ -71,7 +71,7 @@ export function ServicesPreview() {
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-cover" 
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
