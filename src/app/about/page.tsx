@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
-    <section className="bg-zinc-950 text-white py-20 px-4 border-b border-zinc-800">
+    <section className="!bg-zinc-950 text-white py-20 px-4 border-b border-zinc-800">
       <div className="container max-w-5xl mx-auto text-center">
         <div className="mb-8 flex justify-center">
           <Image

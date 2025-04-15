@@ -21,7 +21,7 @@ export default function GalleryPage() {
     <>
     <section className="bg-zinc-950 text-white py-20 px-4 border-b border-zinc-800">
   <div className="container max-w-4xl mx-auto text-center">
-    <h1 className="text-4xl md:text-5xl font-bold text-neon-purple mb-6">
+    <h1 className="text-4xl md:text-5xl font-bold text-neon-pink mb-6">
       Our Work. Your Vision.
     </h1>
     <p className="!text-lg !md:text-xl !text-zinc-400 !leading-relaxed">

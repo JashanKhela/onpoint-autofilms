@@ -75,19 +75,20 @@ export function Header() {
       {/* Mobile Nav Overlay */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-black/95 backdrop-blur border-t border-zinc-800 px-6 py-6 space-y-6 text-xl md:hidden">
-          <Link
-            href="/services"
-            onClick={() => setIsOpen(false)}
-            className="block text-white hover:text-neon-pink transition-colors"
-          >
-            Our Services
-          </Link>
+
           <Link
             href="/about"
             onClick={() => setIsOpen(false)}
             className="block text-white hover:text-neon-pink transition-colors"
           >
             About Us
+          </Link>
+          <Link
+            href="/services"
+            onClick={() => setIsOpen(false)}
+            className="block text-white hover:text-neon-pink transition-colors"
+          >
+            Our Services
           </Link>
           <Link
             href="/gallery"
