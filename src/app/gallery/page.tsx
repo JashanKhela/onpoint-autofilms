@@ -1,5 +1,6 @@
 'use client';
 
+import { ReviewsPreview } from "@/components/home/ReviewsPreview";
 import ContactSection from "@/components/shared/ContactSection";
 import { motion } from "framer-motion";
 
@@ -49,10 +50,12 @@ export default function GalleryPage() {
         ))}
       </div>
     </section>
-    <section className="bg-zinc-950 border-t border-zinc-800 px-4 py-20">
-  <div className="text-center max-w-3xl mx-auto mb-10">
+    <ReviewsPreview />
+
+    <section className="bg-zinc-950 py-20">
+  <div className="text-center mx-auto mb-10">
     <h2 className="text-3xl md:text-4xl font-bold text-neon-teal mb-4">Let’s Talk About Your Project</h2>
-    <p className="text-zinc-400 text-lg">Saw something you liked? Get in touch and let’s bring your vehicle vision to life.</p>
+    <p className="!text-zinc-400 !text-lg">Saw something you liked? Get in touch and let’s bring your vehicle vision to life.</p>
   </div>
   <ContactSection />
 </section>
