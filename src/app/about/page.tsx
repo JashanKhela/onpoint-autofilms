@@ -51,9 +51,9 @@ export default function Page() {
         />
         <h3 className="text-neon-pink text-2xl font-semibold mb-2">Matthew</h3>
         <p className="!text-zinc-400">
-          A car enthusiast with a sharp eye for detail, Matthew is the driving force behind the shop’s
-          PPF and tinting services. With years of hands-on experience, he’s known for transforming
-          vehicles with precision and care. His dedication to top-tier results shows in every job.
+        With over 20 years of experience in the automotive detailing industry, I’ve dedicated my career to mastering the art of polishing and ceramic coatings. Born and raised in the Okanagan, I followed my love for cars early on—starting out at a local body shop and detail business, where I began honing my skills and building my craft. What sets me apart is simple: attention to detail and treating every customer the way I’d want to be treated if it were my own business. Every vehicle I touch gets the same level of care, precision, and pride—because for me, it’s not just detailing, it’s personal.
+
+
         </p>
       </div>
 
