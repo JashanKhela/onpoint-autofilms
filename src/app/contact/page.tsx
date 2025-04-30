@@ -41,7 +41,7 @@ export default function Page() {
           {/* Calendly Widget */}
           <div className="rounded-xl overflow-hidden shadow-lg">
             <InlineWidget
-              url="https://calendly.com/khela-tech"
+              url="https://calendly.com/onpointautofilms"
               styles={{ height: "600px" }}
               pageSettings={{
                 backgroundColor: "1c1c1c",

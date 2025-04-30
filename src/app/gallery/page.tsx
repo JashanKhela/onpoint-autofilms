@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 
 
 const images = [
-  "/ppf.jpg",
-  "/ppf.jpg",
-  "/ppf.jpg",
-  "/ppf.jpg",
-  "/ppf.jpg",
-  "/ppf.jpg",
-  "/ppf.jpg",
-  "/ppf.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043890/20230215_093936_iw1hjv.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043894/20230214_172806_xgfuk1.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043892/20240208_074306_wcpznf.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043892/20240328_155603_ukg03c.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043891/20240815_172523_HDR_pdgoi0.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043891/20250212_082820_leg0qc.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043890/20240629_094957_qycp3d.jpg",
+  "https://res.cloudinary.com/donpihcna/image/upload/v1746043890/20221222_182519_uuccoq.jpg",
 ];
 
 export default function GalleryPage() {
