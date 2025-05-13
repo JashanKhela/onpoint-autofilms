@@ -23,7 +23,7 @@ const services = [
     image: "/ceramic-coating.jpg",
   },
   {
-    title: "Paint Protection Film",
+    title: "Paint Protection Services",
     subtitle: "Vinyl Wrap for Vehicles",
     description:
       "Durable and self-healing, our paint protection film preserves your vehicle’s integrity and finish for the long haul.",
@@ -37,8 +37,8 @@ const services = [
     image: "/window-tint.jpg",
   },
   {
-    title: "Vinyl Wrap",
-    subtitle: "Vinyl Wrap on Mini Cooper",
+    title: "Paint Protection Wrap",
+    subtitle: "Vinyl Wrap on Vehicles",
     description:
       "Customize your car's look with long-lasting, vibrant vinyl wraps — protection and personality in one.",
     image: "/vinyl-wrap.jpg",

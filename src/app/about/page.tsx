@@ -63,7 +63,7 @@ export default function Page() {
                 className="w-full h-64 object-contain rounded-md mb-4"
               />
               <h3 className="text-neon-pink text-2xl font-semibold mb-2">
-                Matthew
+                Mathew
               </h3>
               <p className="!text-zinc-400">
                 With over 20 years of experience in the automotive detailing

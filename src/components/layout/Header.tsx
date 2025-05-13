@@ -50,7 +50,7 @@ export function Header() {
           </Link>
           <a
             href="tel:1234567890"
-            className="ml-2 text-lg px-4 py-2 border-2 border-neon-pink text-neon-pink rounded-md hover:bg-neon-pink hover:text-black transition-colors"
+            className="ml-2 text-lg px-4 py-2 border-2 border-neon-pink text-neon-pink rounded-md hover:bg-neon-teal hover:border-black hover:text-black transition-colors"
           >
             Call Now
           </a>

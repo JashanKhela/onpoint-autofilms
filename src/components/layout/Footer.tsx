@@ -52,7 +52,7 @@ export function Footer() {
               <span>
                 📧{" "}
                 <a
-                  href="mailto:matthew@onpointautofilms.ca"
+                  href="mailto:mathew@onpointautofilms.ca"
                   className="text-neon-purple hover:underline"
                 >
                   Send us an email
