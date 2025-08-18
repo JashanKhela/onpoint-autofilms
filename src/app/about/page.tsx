@@ -45,17 +45,17 @@ export default function Page() {
       <section className="bg-black text-white py-20 px-4 border-b border-t border-neon-pink">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-neon-teal mb-6">
-            Meet the Founders
+            Meet the Founder
           </h2>
           <p className="text-zinc-400 !text-lg !md:text-xl !max-w-3xl !mx-auto mb-12">
-            At the heart of On Point Auto Films are two Okanagan locals who
-            share a love for cars, craftsmanship, and community. With a
-            commitment to excellence and a passion for what they do, they’ve
+            At the heart of On Point Auto Films is a Okanagan local who
+            has a love for cars, craftsmanship, and community. With a
+            commitment to excellence and a passion for what he does, he
             built a shop known for quality, care, and customer connection.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Founder 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-10">
+            {/* Founder 1
             <div className="bg-zinc-900 p-6 rounded-lg border border-zinc-800 text-left">
               <img
                 src="/founder-matthew.jpg" // Update with real image path
@@ -77,14 +77,14 @@ export default function Page() {
                 the same level of care, precision, and pride—because for me,
                 it’s not just detailing, it’s personal.
               </p>
-            </div>
+            </div> */}
 
             {/* Founder 2 */}
             <div className="bg-zinc-900 p-6 rounded-lg border border-zinc-800 text-left">
               <img
                 src="/founder-derek.jpg" // Update with real image path
                 alt="Derek"
-                className="w-full h-64 object-contain rounded-md mb-4"
+                className="mx-auto h-64 object-contain rounded-xl mb-4"
               />
               <h3 className="text-neon-pink text-2xl font-semibold mb-2">
                 Derek
