@@ -22,7 +22,7 @@ const services = [
     title: "Ceramic Coating",
     description:
       "A high-gloss, hydrophobic finish that protects your paint and keeps your vehicle shining for years.",
-    image: "/ceramic-coating.jpg",
+    image: "/ceramic-coating.jpeg",
   },
   {
     title: "Paint Correction",

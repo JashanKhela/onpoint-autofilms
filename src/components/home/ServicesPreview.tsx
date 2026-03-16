@@ -20,7 +20,7 @@ const services = [
     subtitle: "Ceramic Coating for Vehicles",
     description:
       "Our advanced ceramic coatings create a hydrophobic layer that resists heat, UV, and chemicals — all while staying glossy.",
-    image: "/ceramic-coating.jpg",
+    image: "/ceramic-coating.jpeg",
   },
   {
     title: "Paint Protection Services",
